@@ -32,7 +32,7 @@ if __name__ == "__main__":
    model.eval()  # Set the model to evaluation mode
 
    image = Image.open(path).convert("RGB") # Open Image from path
-   new_size = (image.width * scale_factor, image.height * scale_factor)
+   new_size = (image.height* scale_factor, image.width * scale_factor)
    image1 = Resize(new_size, interpolation = PIL.Image.BICUBIC)(image)
    image1.show()
    
