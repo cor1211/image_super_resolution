@@ -83,7 +83,7 @@ if __name__ == "__main__":
    
    # Training
    for epoch in range(num_epochs):
-      torch.cuda.empty_cache()
+      # torch.cuda.empty_cache()
       model.train()
       total_loss = 0.0
       tqdm_train_loader = tqdm(train_loader)
@@ -98,8 +98,8 @@ if __name__ == "__main__":
          loss_value.backward() # Backpropagation, compute gradients
          optimizer.step() # Update weights         
          tqdm_train_loader.set_description(f'Epoch [{epoch+1}/{num_epochs}], Iter [{iter+1}/{num_iter_train}], Loss: {lv:.5f}')
-         torch.cuda.empty_cache()
-      
+         # torch.cuda.empty_cache()
+      print(f"Epoch [{epoch+1}/{num_epochs}], Loss_avg: {(total_loss/num_iter_train):.5f}") # Print average loss of epoch
       # Save weights after each epoch
       torch.save(model.state_dict(), f'/{path_weight_save}/rdn_x{scale_factor}-C{num_layers}-D{num_blocks}-G0{num_features}-G{growth_rate}-epoch{epoch+1}.pth') # Save the model weights
       
