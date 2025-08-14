@@ -56,7 +56,7 @@ if __name__ == "__main__":
    output_image = Image.fromarray(output_image)
    output_image.show()
    if save:
-      hr_img_path = save_path + path.split('/')[-1].split('.')[0] + ".tiff"
+      hr_img_path = save_path + path.split('/')[-1].split('.')[0] + "_upcaled.png"
       output_image.save(hr_img_path)
       print(f"HR of {path} saved in {hr_img_path}")
       
