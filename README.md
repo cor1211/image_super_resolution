@@ -1,5 +1,5 @@
 <img src = "data/sample/506.jpg" alt = "origin image" width = "256" height = "256"/>
-<img src = "data/sample/506.png" alt = "origin image" width = "512" height = "512"/>
+<img src = "data/sample/506_upscaled.png" alt = "origin image" width = "512" height = "512"/>
 
 
 📌 **Image Super-Resolution ISR**
@@ -68,8 +68,8 @@ image_super_resolution/
 ## Installation
 - Install ISR from the GitHub source:
   ```
-  git clone https://github.com/cor1211/image_super_resolution.git
-  pip install -r requirements.txt
+  git clone https://github.com/cor1211/image_super_resolution.git 
+  conda env create -f environment.yml # Need to install anaconda/miniconda before
   ```
 ## Using
 **Prediction**
