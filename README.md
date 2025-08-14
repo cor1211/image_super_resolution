@@ -1,5 +1,6 @@
-![506](https://github.com/user-attachments/assets/f58972cc-8a4a-4f60-968a-acc84d7034f2)
-![506](https://github.com/user-attachments/assets/a74bb838-d0b8-49dd-b396-2b7772b9b935)
+<img src = "data/sample/506.jpg" alt = "origin image" width = "256" height = "256"/>
+<img src = "data/sample/506.png" alt = "origin image" width = "512" height = "512"/>
+
 
 📌 **Image Super-Resolution ISR**
 
