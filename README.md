@@ -70,6 +70,11 @@ image_super_resolution/
   ```
   git clone https://github.com/cor1211/image_super_resolution.git
   pip install requirements.txt
-  cd RDN/
-  python test_RDN.py --image_path "your_image_path"
   ```
+# Using
+**Prediction**
+```
+cd RDN/
+python test_RDN.py --image_path "your_image_path"
+```
+
