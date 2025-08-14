@@ -69,9 +69,9 @@ image_super_resolution/
 - Install ISR from the GitHub source:
   ```
   git clone https://github.com/cor1211/image_super_resolution.git
-  pip install requirements.txt
+  pip install -r requirements.txt
   ```
-# Using
+## Using
 **Prediction**
 ```
 cd RDN/
