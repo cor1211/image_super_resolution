@@ -21,7 +21,9 @@ RDN leverages dense connections and residual learning to effectively extract and
 
 The project supports multiple scaling factors (e.g., ×2, ×3, ×4) and has been evaluated on standard benchmarks such as DIV2K, Set5, and Set14, achieving competitive PSNR and SSIM scores.
 This implementation is inspired by the original paper: [Residual Dense Network for Image Super-Resolution](https://arxiv.org/abs/1802.08797) (Zhang et al. 2018).
+
 <img width="658" height="188" alt="image" src="https://github.com/user-attachments/assets/72efa6e5-d3c7-4040-983a-3045a7b98f6e" />
+
 <img width="481" height="162" alt="image" src="https://github.com/user-attachments/assets/59058f23-34b0-420d-940b-5fe79053557a" />
 
 ## Project Structure
@@ -67,6 +69,7 @@ image_super_resolution/
 - Install ISR from the GitHub source:
   ```
   git clone https://github.com/cor1211/image_super_resolution.git
+  pip install requirements.txt
   cd RDN/
   python test_RDN.py --image_path "your_image_path"
   ```
