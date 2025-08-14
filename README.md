@@ -1,4 +1,8 @@
-📌 Image Super-Resolution ISR (Residual Dense Network)
+![506](https://github.com/user-attachments/assets/f58972cc-8a4a-4f60-968a-acc84d7034f2)
+![506](https://github.com/user-attachments/assets/a74bb838-d0b8-49dd-b396-2b7772b9b935)
+
+📌 **Image Super-Resolution ISR**
+
 An implementation of Residual Dense Network (RDN) for single image super-resolution using PyTorch.
 
 This project aims to reconstruct high-resolution images from low-resolution inputs, achieving high PSNR and SSIM performance.
@@ -58,3 +62,10 @@ image_super_resolution/
 - **Data preprocessing utilities** – Includes scripts for creating low-resolution images (`create_LR.py`) and cropping datasets (`crop_image.py`).
 - **Evaluation metrics** – PSNR and SSIM evaluation for quantitative performance comparison.
 - **GPU acceleration** – Optimized for CUDA-enabled devices to speed up training and inference.
+## Installation
+- Install ISR from the GitHub source:
+  ```
+  git clone https://github.com/cor1211/image_super_resolution.git
+  cd RDN/
+  python test_RDN.py --image_path "your_image_path"
+  ```
