@@ -26,7 +26,7 @@ if __name__ == "__main__":
    parser.add_argument('--root', type = str, default = '/kaggle/input/dataset-model/imagenet_dataset', help = 'Root directory of the ImageNet dataset')
    parser.add_argument('--num_workers', type = int, default = 2, help = 'Number of workers for DataLoader')
    parser.add_argument('--root_weight_load', type = str, default = '', help = 'Path to model weight')
-   parser.add_argument('--scale_factor', type = int, default = 4, help = 'Scale input to output')
+   parser.add_argument('--scale_factor', type = int, default = 2, help = 'Scale input to output')
    parser.add_argument('--path_weight_save', type = str, default = '', help = 'Path to save model weight')
    
    # Parameters for training
