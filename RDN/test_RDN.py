@@ -6,11 +6,12 @@ from PIL import Image
 from torchvision.transforms import ToTensor, Resize
 import matplotlib.pyplot as plt
 from argparse import ArgumentParser
+from tqdm import tqdm
 
 parser = ArgumentParser()
 parser.add_argument("--image_path", type=str, default="../data/sample/baboon.png", help="Path to the input image")
 parser.add_argument("--scale_factor", type=int, default = 2, help="Scale factor for super-resolution")
-parser.add_argument("--weight_path", type = str, default = "../weights/image_64_128_250f/rdn_x2-C8-D16-G064-G64-best_psnr26_9196_13.pth", help = "Path to the model weights")
+parser.add_argument("--weight_path", type = str, default = "../weights/image_64_128_250f/rdn_x2-C8-D16-G064-G64-epoch41.pth", help = "Path to the model weights")
 parser.add_argument("--save", type = bool, default=True, help="Save HR-image")
 parser.add_argument("--save_path", type=str, default="../data/sample/", help="Path to save image")
 
