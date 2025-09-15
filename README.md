@@ -27,35 +27,17 @@ This implementation is inspired by the original paper: [Residual Dense Network f
 <img width="481" height="162" alt="image" src="https://github.com/user-attachments/assets/59058f23-34b0-420d-940b-5fe79053557a" />
 
 ## Project Structure
-image_super_resolution/
-
-│
-
-├── RDN/ # Thư mục chứa code chính
-
-│ ├── RDN.py # Định nghĩa kiến trúc mô hình
-
-│ ├── imgNet_dataset.py # Xử lý dữ liệu
-
-│ ├── train_RDN.py # Script huấn luyện
-
-│ ├── test_RDN.py # Script kiểm tra
-
-│ └── pycache/ # Cache Python
-
-│
-
-├── weights/ # Thư mục lưu trọng số mô hình
-
-│ └── rdn_x2...pth
-
-│
-
-├── create_LR.py # Tạo ảnh Low-Resolution
-
-├── crop_image.py # Cắt và tiền xử lý ảnh
-
-└── README.md # File mô tả dự án
+```
+Directory structure:
+└── cor1211-image_super_resolution/
+    ├── README.md
+    ├── environment.yml
+    └── RDN/
+        ├── imgNet_dataset.py
+        ├── RDN.py
+        ├── test_RDN.py
+        └── train_RDN.py
+```
 
 ## Features
 - **State-of-the-art architecture** – Implements the [Residual Dense Network (RDN)](https://arxiv.org/abs/1802.08797) for single image super-resolution.
